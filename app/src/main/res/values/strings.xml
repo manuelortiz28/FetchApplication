@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fetch Application</string>
+    <string name="group_sorting">Sort by Group</string>
+    <string name="name_sorting">Sort by Name</string>
+    <string name="header_item">Group: %1s</string>
+</resources>

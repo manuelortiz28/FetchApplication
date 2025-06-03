@@ -1,0 +1,69 @@
+[versions]
+activityCompose = "1.10.1"
+agp = "8.9.3"
+archcore = "2.2.0"
+composeBom = "2025.05.01"
+coreKtx = "1.16.0"
+coroutines = "1.10.1"
+espresso = "3.6.1"
+fragment = "1.8.7"
+gson = "2.11.0"
+hilt = "2.56.2"
+junit = "4.13.2"
+junitAndroid = "1.2.1"
+kotlin = "2.1.21"
+ksp = "2.1.21-2.0.1"
+lifecycleRuntimeKtx = "2.9.0"
+material = "1.12.0"
+mockk = "1.13.12"
+recyclerview = "1.4.0"
+retrofit = "2.11.0"
+robolectric = "4.14"
+testcorektx = "1.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# UI
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+# Network
+network-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+network-retrofit-gsonconverter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+# Gson
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# DI
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+dagger-hilt-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
+# Testing
+androidx-espresso-contrib = { group = "androidx.test.espresso", name="espresso-contrib", version.ref = "espresso" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+androidx-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitAndroid" }
+androidx-test = { group = "androidx.test", name = "core", version.ref = "testcorektx" }
+androidx-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "archcore" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlin" }
+mocking-mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+testing-robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
